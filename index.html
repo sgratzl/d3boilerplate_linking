@@ -3,17 +3,40 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>D3 Boilerplate</title>
+    <title>D3 Boilerplate Linking</title>
     <link rel="stylesheet" href="./style.css">
     <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
 </head>
 
 <body>
-  <h1>D3 Boilerplate</h1>
-  <!--include d3-->
-  <script src="./web_modules/d3/build/d3.js"></script>
-  <!--include our script-->
-  <script src="./index.js"></script>
+    <h1>D3 Boilerplate Linking</h1>
+    <main>
+        <section>
+            <h3>Scatterplot</h3>
+            <div>
+                X-Attribute: <select id="xattr"></select> / Y-Attribute: <select id="yattr"></select>
+            </div>
+
+            <div id="scatterPlot">
+
+            </div>
+        </section>
+        <section>
+            <h3>Bar Chart</h3>
+            <div>
+                Attribute: <select id="barattr"></select>
+            </div>
+
+            <div id="barChart">
+
+            </div>
+        </section>
+    </main>
+
+    <!--include d3-->
+    <script src="./web_modules/d3/build/d3.js"></script>
+    <!--include our script-->
+    <script src="./index.js"></script>
 </body>
 
 </html>

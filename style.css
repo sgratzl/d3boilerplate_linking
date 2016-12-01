@@ -6,3 +6,35 @@ body {
    margin: 25px auto;
    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
+
+main {
+  display: flex;
+}
+
+/**
+ * default styles for scatterPlot circles
+ */
+#scatterPlot circle {
+  fill: steelblue;
+  opacity: 0.8;
+}
+
+/**
+ * default styles for bar chart bars
+ */
+#barChart rect {
+  fill: steelblue;
+}
+
+/**
+ * upon mouse over
+ */
+#barChart rect:hover, #scatterPlot circle:hover {
+  fill: orange;
+}
+/**
+ * upon selected item
+ */
+#barChart rect.selected, #scatterPlot circle.selected {
+  fill: darkorange;
+}
